@@ -4,13 +4,12 @@ public class Montre {
     private int heures;
     private int minutes;
 
-
     public Montre(int heures, int minutes) {
         this.heures = heures;
         this.minutes = minutes;
     }
     public String afficherHeure() {
-        return String.format("%02dh%02d", heures, minutes);
+        return heures + "h" + minutes;
     }
 
     public void reglerHeure(int heure, int min) {
